@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="task1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PERSONAL PORTFOLIO</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <p class="name">Hello, I am <span class="myname">DEVJEET BEHERA</span></p>
+      <h2 class="work">I am a beginner web developer</h2>
+      <p>I am currently studying in Odisha University of Technology and Research majoring in Electrical Engineering. I want to pursue a carrer in Web Development.</p>
+    </div>
+    <main>
+        <section role="region" aria-labelledby="projects">
+          <h2 id="projects">PROJECTS</h2>
+          <div class="info">
+            <textarea id="project-textarea" name="proj-name" rows="2" cols="60" placeholder="Project title..."></textarea>        
+          </div>
+          <div class="info">
+            <textarea id="project-textarea" name="proj-descp" rows="5" cols="60" placeholder="Project description..."></textarea>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="skills">
+          <h2 id="skills">SKILLS</h2>
+          <div class="skill">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+          
+        </section>
+        <section role="region" aria-labelledby="contact" class="last">
+          <p id="contact">CONTACT INFORMATION:</p>
+          <p>Email: devjeet09@gmail.com</p>
+          <p>Mobile: +919467873522
+        </section>
+    </main>
+  </body>
+</html>
